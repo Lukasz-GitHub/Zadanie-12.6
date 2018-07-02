@@ -20,7 +20,7 @@ function showCountriesList(resp) {
     countriesList.innerHTML = ' ';
     resp.forEach(function (item) {
         var liEl = document.createElement('li');
-        liEl.innerText = item.name;
+        liEl.innerHTML = ('Country: ' + item.name + ', Capital: ' + item.capital + ', Population: ' + item.population);
         countriesList.appendChild(liEl);
 
     });
